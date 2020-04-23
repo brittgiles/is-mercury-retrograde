@@ -11,7 +11,7 @@ retrogradeApp.displayRetrograde = function(answer) {
     const isRetrograde = answer.is_retrograde;
     //console.log('is mercury in retrograde?', isRetrograde);
 
-    //if isRetrograde is fale then change the p and pclass to No
+    //if isRetrograde is false then change the p and pclass to No
     if(isRetrograde === false) {
         // $('p').removeClass('answerYes').addClass('answerNo');
         $('p.answerYes').replaceWith(`<p class="answerNo">&#10007; Not today! Mercury isn't in retrograde so you'll need a different excuse. </p>`);
@@ -31,7 +31,6 @@ retrogradeApp.getRetrograde = function() {
             //date: "2019-11-01", //date to test "true" against
         }
     }).then(function(response) {
-        // console.log("Here is the response", response);
         retrogradeApp.displayRetrograde(response); 
     });
 };
