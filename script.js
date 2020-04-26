@@ -15,7 +15,6 @@ retrogradeApp.displayRetrograde = function(answer) {
     if(isRetrograde === false) {
         // $('p').removeClass('answerYes').addClass('answerNo');
         $('p.answerYes').replaceWith(`<p class="answerNo">&#10007; Not today! Mercury isn't in retrograde so you'll need a different excuse. </p>`);
-
     }
 };
 
