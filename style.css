@@ -8,9 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-
-
-
 .wrapper {
     max-width: 1000px;
     width: 85%;
@@ -21,7 +18,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     background: linear-gradient(-45deg, #fa709a, #fee140);
     background-size: 400% 400%;
     animation: backgroundGradient 8s ease infinite;
-    /* height: 100vh; */
     margin: 0;
     padding: 30px 50px;
 }
@@ -96,4 +92,60 @@ main {
     0%{background-position:88% 0%}
     50%{background-position:13% 100%}
     100%{background-position:88% 0%}
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 883px) {
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 685px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 585px) {
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+    }
+
+    .explanation {
+        letter-spacing: 1px;
+    }
 }
