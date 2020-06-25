@@ -4,12 +4,10 @@ const retrogradeApp = {};
 // Getting current date for API url
 let today = new Date();
 let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-//console.log('this is the date', date);
 
 //creating the function for displayRetrograde
 retrogradeApp.displayRetrograde = function(answer) {
     const isRetrograde = answer.is_retrograde;
-    //console.log('is mercury in retrograde?', isRetrograde);
 
     //if isRetrograde is false then change the p and pclass to No
     if(isRetrograde === false) {
